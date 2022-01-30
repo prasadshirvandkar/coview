@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Narendra Modi",
+    "designation": "Prime Minister of India",
+    "born": "September 17, 1950",
+    "age": "71 Years",
+    "party": "Bharatiya Janata Party",
+    "followers": "73.1M",
+    "tweets": "31.2K",
+    "username": "narendramodi",
+    "id": "18839785"
+  },
+  {
+    "name": "Smriti Irani",
+    "designation": "Minister of Women & Child Development, India",
+    "born": "March 23, 1976",
+    "age": "45 Years",
+    "party": "Bharatiya Janata Party",
+    "followers": "11.9M",
+    "tweets": "55.1K",
+    "username": "smritiirani",
+    "id": "130104041"
+  },
+  {
+    "name": "Rahul Gandhi",
+    "designation": "Member of Indian National Congress",
+    "born": "June 19, 1970",
+    "age": "51 Years",
+    "party": "Indian National Congress",
+    "followers": "19.5M",
+    "tweets": "5.8K",
+    "username": "RahulGandhi",
+    "id": "3171712086"
+  },
+  {
+    "name": "Mansukh Mandaviya",
+    "designation": "Minister of Health and Family Welfare",
+    "born": "June 1, 1972",
+    "age": "49 Years",
+    "party": "Bharatiya Janata Party",
+    "followers": "365.2K",
+    "tweets": "15.7K",
+    "username": "mansukhmandviya",
+    "id": "432697203"
+  },
+  {
+    "name": "Ministry of Health",
+    "designation": "Ministry of Health",
+    "born": "",
+    "age": "",
+    "party": "",
+    "followers": "2.7K",
+    "tweets": "63.3K",
+    "username": "MoHFW_INDIA",
+    "id": "2596143056"
+  }
+]

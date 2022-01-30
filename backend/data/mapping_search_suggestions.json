@@ -1,0 +1,32 @@
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "analysis": {
+      "normalizer": {
+        "my_normalizer": {
+          "type": "custom",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "key": {
+        "type": "text",
+        "fields": {
+          "normalize": {
+            "type": "keyword",
+            "normalizer": "my_normalizer"
+          },
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}

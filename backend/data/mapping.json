@@ -1,0 +1,84 @@
+{
+    "settings": {
+        "number_of_shards": 5,
+        "number_of_replicas": 1,
+        "analysis": {
+         "analyzer": {
+           "blogs_analyzer": {
+             "type": "standard",
+             "stopwords": "_english_"
+           }
+         }
+       }
+    },
+    "mappings": {
+        "properties": {
+            "poi_name": {
+                "type": "text"
+            },
+            "id": {
+                "type": "keyword"
+            },
+            "poi_id": {
+                "type": "keyword"
+            },
+            "verified": {
+                "type": "boolean"
+            },
+            "country": {
+                "type": "keyword"
+            },
+            "replied_to_tweet_id": {
+                "type": "long"
+            },
+            "replied_to_user_id": {
+                "type": "text"
+            },
+            "reply_text": {
+                "type": "text"
+            },
+            "tweet_text": {
+                "type": "text"
+            },
+            "tweet_lang": {
+                "type": "keyword"
+            },
+            "text_en": {
+                "type": "text",
+                "analyzer": "english"
+            },
+            "text_es": {
+                "type": "text",
+                "analyzer": "spanish"
+            },
+            "text_hi": {
+                "type": "text",
+                "analyzer": "hindi"
+            },
+            "hashtags": {
+                "type": "text"
+            },
+            "mentions": {
+                "type": "text"
+            },
+            "tweet_urls": {
+                "type": "text"
+            },
+            "tweet_emoticons": {
+                "type": "text"
+            },
+            "tweet_date": {
+                "type": "date"
+            },
+            "sentiment": {
+                "type": "keyword"
+            },
+            "sentiment": {
+                "type": "keyword"
+            },
+            "english_translation": {
+                "type": "text"
+            }
+        }
+    }
+}

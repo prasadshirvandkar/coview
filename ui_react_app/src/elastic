@@ -1,0 +1,71 @@
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "match": {
+                        "tweet_text": {
+                            "query": "covid",
+                            "fuzziness": "AUTO"
+                        }
+                    }
+                }
+            ],
+            "filter": {
+                "bool": {
+                    "must": [
+                        {
+                            "terms": {
+                                "country": [
+                                    "USA"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
+
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "match": {
+                        "tweet_text": {
+                            "query": "covid",
+                            "fuzziness": "AUTO"
+                        }
+                    }
+                }
+            ],
+            "filter": [
+                {
+                    "terms": {
+                        "country": [
+                            "India"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
+
+{
+    "query": {
+        "match": {
+            "verified": "true"
+        }
+    }
+}
+
+{
+    "query": {
+        "match": {
+            "poi_id": "18839785"
+        }
+    }
+}

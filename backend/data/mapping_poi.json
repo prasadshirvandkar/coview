@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "analysis": {
+      "normalizer": {
+        "my_normalizer": {
+          "type": "custom",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text",
+        "fields": {
+          "normalize": {
+            "type": "keyword",
+            "normalizer": "my_normalizer"
+          },
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "designation": {
+        "type": "text"
+      },
+      "born": {
+        "type": "text"
+      },
+      "age": {
+        "type": "text"
+      },
+      "party": {
+        "type": "text"
+      },
+      "followers": {
+        "type": "text"
+      },
+      "tweets": {
+        "type": "text"
+      },
+      "username": {
+        "type": "text"
+      },
+      "id": {
+        "type": "keyword"
+      }
+    }
+  }
+}
