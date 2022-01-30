@@ -1,6 +1,6 @@
 import requests
 
-url = 'https://gnews.io/api/v4/top-headlines?&token=7fc6c8fc67eec7e0d49350fcd9ccb19b'
+url = 'https://gnews.io/api/v4/top-headlines?&token=<Your API Key From GNews API>'
 
 
 def get_top_headlines(country, lang, query):
@@ -30,6 +30,6 @@ def get_top_headlines_from_all(query):
 if __name__ == "__main__":
     # print(get_top_headlines_from_all('narendra'))
     params = {'q': "covid"}
-    articles = requests.get(url='https://gnews.io/api/v4/search?token=417c4732f20aa6a326174fdbcefbab73', params=params).json()
+    articles = requests.get(url='https://gnews.io/api/v4/search?token=<Your API Key From GNews API>', params=params).json()
     print(articles)
     # print(articles['articles'])

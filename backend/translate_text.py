@@ -1,7 +1,7 @@
 import requests, uuid, json
 from googletrans import Translator
 
-subscription_key = "b1ab910d754e4753904739bd6e28ce57"
+subscription_key = "<Your Microsoft Translator Service Azure Key>"
 endpoint = "https://api.cognitive.microsofttranslator.com"
 
 location = "eastus"
