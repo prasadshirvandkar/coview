@@ -20,5 +20,5 @@ Technologies Used:
 - Google and Microsoft Azure Translate API
 - D3.js for Analysis Graphs
 
-![Screenshot2](/Users/prasadshirvandkar/PycharmProjects/coview/resources/screenshot2.png)
-![Screenshot1](/Users/prasadshirvandkar/PycharmProjects/coview/resources/screenshot1.png)
+![Screenshot2](resources/screenshot2.png)
+![Screenshot1](resources/screenshot1.png)
